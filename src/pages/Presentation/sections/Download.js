@@ -59,6 +59,7 @@ function Download() {
               variant="gradient"
               color="info"
               size="large"
+              onClick={handleDonateClick}
               component="a"
               href=""
               sx={{ mb: 2 }}
@@ -180,5 +181,26 @@ function Download() {
     </MKBox>
   );
 }
+const handleDonateClick = async () => {
+  try {
+    if (!window.cardano || !window.cardano.lace) {
+      alert("Vui lòng cài đặt ví Lace extension trên trình duyệt.");
+      return;
+    }
+
+    // Kết nối với ví Lace
+    const api = await window.cardano.lace.enable();
+
+    // Ví dụ: kiểm tra địa chỉ người dùng
+    const addresses = await api.getUsedAddresses();
+    console.log("Connected Wallet Addresses:", addresses);
+
+    // Sau khi kết nối ví thành công, chuyển trang tới giao dịch
+    window.location.href = "/transaction"; // bạn có thể đổi URL tùy hệ thống
+  } catch (error) {
+    console.error("Không thể kết nối ví Lace:", error);
+    alert("Không thể kết nối ví Lace.");
+  }
+};
 
 export default Download;

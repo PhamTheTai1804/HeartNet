@@ -14,58 +14,39 @@ Coded by www.creative-tim.com
 */
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
-
+import MKBox from "components/MKBox";
+import LayoutDonate from "layouts/sections/components/LayoutDonate";
 // Inputs page components
 import InputDynamic from "layouts/sections/input-areas/inputs/components/InputDynamic";
-import InputStatic from "layouts/sections/input-areas/inputs/components/InputStatic";
-import InputOutlined from "layouts/sections/input-areas/inputs/components/InputOutlined";
-import InputIcon from "layouts/sections/input-areas/inputs/components/InputIcon";
-import InputSuccess from "layouts/sections/input-areas/inputs/components/InputSuccess";
-import InputError from "layouts/sections/input-areas/inputs/components/InputError";
-import InputDisabled from "layouts/sections/input-areas/inputs/components/InputDisabled";
-
-// Inputs page components code
-import inputDynamicCode from "layouts/sections/input-areas/inputs/components/InputDynamic/code";
-import inputStaticCode from "layouts/sections/input-areas/inputs/components/InputStatic/code";
-import inputOutlinedCode from "layouts/sections/input-areas/inputs/components/InputOutlined/code";
-import inputIconCode from "layouts/sections/input-areas/inputs/components/InputIcon/code";
-import inputSuccessCode from "layouts/sections/input-areas/inputs/components/InputSuccess/code";
-import inputErrorCode from "layouts/sections/input-areas/inputs/components/InputError/code";
-import inputDisabledCode from "layouts/sections/input-areas/inputs/components/InputDisabled/code";
+import InputAddress from "layouts/sections/input-areas/inputs/components/InputAddress";
+import InputNote from "layouts/sections/input-areas/inputs/components/InputNote";
+import MKButton from "components/MKButton";
 
 function Inputs() {
   return (
-    <BaseLayout
-      title="Inputs"
+    <LayoutDonate
+      title="Enter donation information"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/input-areas/inputs" },
-        { label: "Inputs" },
+        { label: "Presentation", route: "/sections/input-areas/inputs" },
+        { label: "Donation" },
       ]}
     >
-      <View title="Input dynamic" code={inputDynamicCode}>
+      <View title="">
         <InputDynamic />
       </View>
-      <View title="Input static" code={inputStaticCode}>
-        <InputStatic />
+      <View title="">
+        <InputAddress />
       </View>
-      <View title="Input outlined" code={inputOutlinedCode}>
-        <InputOutlined />
+      <View title="">
+        <InputNote />
       </View>
-      <View title="Input icon" code={inputIconCode}>
-        <InputIcon />
-      </View>
-      <View title="Input success" code={inputSuccessCode}>
-        <InputSuccess />
-      </View>
-      <View title="Input error" code={inputErrorCode}>
-        <InputError />
-      </View>
-      <View title="Input disabled" code={inputDisabledCode}>
-        <InputDisabled />
-      </View>
-    </BaseLayout>
+      <MKBox display="flex" justifyContent="center" mt={2}>
+        <MKButton variant="gradient" color="info" size="large" component="a" href="" sx={{ mb: 2 }}>
+          Donate Now
+        </MKButton>
+      </MKBox>
+    </LayoutDonate>
   );
 }
 

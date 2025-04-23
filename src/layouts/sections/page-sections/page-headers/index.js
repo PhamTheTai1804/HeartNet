@@ -19,22 +19,23 @@ import View from "layouts/sections/components/View";
 
 // PageHeaders page components
 import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
-
+import Inputs from "layouts/sections/input-areas/inputs";
 // PageHeaders page components code
 import headerOneCode from "layouts/sections/page-sections/page-headers/components/HeaderOne/code";
 
 function PageHeaders() {
   return (
     <BaseLayout
-      title="Page Headers"
+      title="Dự Án Xây Trường Vùng Cao"
       breadcrumb={[
         { label: "Page Sections", route: "/sections/page-sections/page-headers" },
         { label: "Page Headers" },
       ]}
     >
-      <View title="Header 1" code={headerOneCode} height="40rem">
+      <View title="Từ Ngày 26/3 đến 26/10" code={headerOneCode} height="40rem">
         <HeaderOne />
       </View>
+      <Inputs />
     </BaseLayout>
   );
 }

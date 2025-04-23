@@ -19,7 +19,6 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 // react-copy-to-clipboard components
-import { CopyToClipboard } from "react-copy-to-clipboard";
 
 // react-syntax-highlighter components
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -28,14 +27,11 @@ import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // @mui material components
 import Grid from "@mui/material/Grid";
 import AppBar from "@mui/material/AppBar";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import Slide from "@mui/material/Slide";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKAlert from "components/MKAlert";
-import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React base styles
@@ -44,10 +40,8 @@ import colors from "assets/theme/base/colors";
 function View({ children, code, title, height, ...rest }) {
   const { grey } = colors;
 
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab] = useState(0);
   const [success, setSuccess] = useState(false);
-
-  const handleTabType = (event, newValue) => setActiveTab(newValue);
 
   useEffect(() => {
     setTimeout(() => setSuccess(false), 3000);
@@ -59,7 +53,7 @@ function View({ children, code, title, height, ...rest }) {
       position="relative"
       borderRadius="xl"
       shadow="lg"
-      mb={12}
+      mb={1}
       sx={{ overflow: "hidden" }}
       {...rest}
     >
@@ -77,34 +71,7 @@ function View({ children, code, title, height, ...rest }) {
             </MKTypography>
           </Grid>
           <Grid item xs={12} lg={3}>
-            <AppBar position="static">
-              <Tabs value={activeTab} onChange={handleTabType}>
-                <Tab
-                  icon={
-                    <MKBox
-                      component="i"
-                      color="dark"
-                      mr={1.25}
-                      sx={{ fontSize: ({ typography: { size } }) => size.sm }}
-                      className="fas fa-desktop"
-                    />
-                  }
-                  label="Preview"
-                />
-                <Tab
-                  icon={
-                    <MKBox
-                      component="i"
-                      color="dark"
-                      mr={1.25}
-                      sx={{ fontSize: ({ typography: { size } }) => size.sm }}
-                      className="fas fa-code"
-                    />
-                  }
-                  label="Code"
-                />
-              </Tabs>
-            </AppBar>
+            <AppBar position="static"></AppBar>
           </Grid>
         </Grid>
       </MKBox>
@@ -130,17 +97,6 @@ function View({ children, code, title, height, ...rest }) {
           borderRadius="xl"
           sx={{ overflow: "hidden" }}
         >
-          <CopyToClipboard text={code}>
-            <MKButton
-              variant="gradient"
-              color="dark"
-              size="small"
-              sx={{ position: "absolute", top: "0.5rem", right: "0.5rem" }}
-              onClick={() => setSuccess(true)}
-            >
-              <MKBox color="white" mr={0.5} className="fas fa-copy" /> Copy
-            </MKButton>
-          </CopyToClipboard>
           <Slide direction="down" in={success} unmountOnExit>
             <MKBox position="absolute" top="0.5rem" left={0} width="100%">
               <MKAlert

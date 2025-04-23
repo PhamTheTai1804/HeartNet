@@ -169,11 +169,11 @@ function HeaderOne() {
                 },
               })}
             >
-              Material Kit
+              Góp Gạch Xây Trường
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
-              The time is now for it be okay to be great. People in this world shun people for being
-              nice.
+              Mỗi khoản đóng góp bạn trao đi chung tay đóng góp cho cơ hội tới trường, chắp cánh cơ
+              hội đổi đời cho các trẻ em vùng cao
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
               <MKButton color="white">Get Started</MKButton>

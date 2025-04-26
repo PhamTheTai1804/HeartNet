@@ -25,7 +25,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import bgImage from "assets/images/bg-coworking.jpeg";
+import CaoBangImage from "assets/images/Cao Bằng.jpg";
 
 function HeaderOne() {
   return (
@@ -42,7 +42,7 @@ function HeaderOne() {
               py={0.8125}
               mr={2}
             >
-              Material Design
+              Ảnh chụp tại Cao Bằng
             </MKTypography>
             <MKButton
               variant="outlined"
@@ -152,7 +152,7 @@ function HeaderOne() {
             `${linearGradient(
               rgba(gradients.dark.main, 0.5),
               rgba(gradients.dark.state, 0.5)
-            )}, url(${bgImage})`,
+            )}, url("${CaoBangImage}")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

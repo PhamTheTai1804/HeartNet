@@ -55,16 +55,16 @@ function Pages() {
           <MKBadge
             variant="contained"
             color="info"
-            badgeContent="boost creativity"
+            badgeContent="Cộng đồng"
             container
             sx={{ mb: 2 }}
           />
           <MKTypography variant="h2" fontWeight="bold">
-            With our coded pages
+            Gửi ý kiến cho chúng tôi
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            The easiest way to get started is to use one of our
-            <br /> pre-built example pages.
+            Hãy gửi cho chúng tôi về các trường hợp cần xã hội giúp đỡ
+            <br /> tại khu vực của bạn.
           </MKTypography>
         </Grid>
       </Container>
@@ -78,11 +78,11 @@ function Pages() {
           <Grid item xs={12} lg={3}>
             <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
               <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                Presentation Pages for Company, Landing Pages, Blogs and Support
+                Sự đóng góp của bạn sẽ mang sự giúp đỡ của cộng đồng tới rất nhiều hoàn cảnh khó
+                khăn.
               </MKTypography>
               <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                These is just a small selection of the multiple possibitilies you have. Focus on the
-                business, not on the design.
+                Hãy tìm hiểu, lắng nghe và chia sẻ các câu chuyện !
               </MKTypography>
             </MKBox>
           </Grid>

@@ -3,7 +3,6 @@ import LayoutDonate from "layouts/sections/components/LayoutDonate";
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import VoteCheckbox from "components/VoteCheckbox"; // replacement for MKCheckbox
-import InputAddress from "layouts/sections/input-areas/inputs/components/InputAddress";
 import InputNote from "layouts/sections/input-areas/inputs/components/InputNote";
 import InputDynamic from "layouts/sections/input-areas/inputs/components/InputDynamic";
 import MKProgress from "components/MKProgress"; // this one exists in Material Kit
@@ -89,7 +88,6 @@ function Inputs() {
       ]}
     >
       <InputDynamic inputRef={inputRef} />
-      <InputAddress />
       <InputNote />
 
       {!hasDonated && (

@@ -25,6 +25,10 @@ import MKTypography from "components/MKTypography";
 
 // Images
 import bgImage from "assets/images/shapes/waves-white.svg";
+import laceImage from "assets/images/Lace.png";
+import NamiImage from "assets/images/Nami.png";
+import YoroiImage from "assets/images/Yoroi.png";
+import EternlImage from "assets/images/Eternl.png";
 
 function Download() {
   return (
@@ -50,10 +54,11 @@ function Download() {
         <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
           <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
             <MKTypography variant="h3" color="white">
-              Text kiểu bắt đầu quyên góp đi
+              Quyên góp ngay bây giờ
             </MKTypography>
             <MKTypography variant="body2" color="white" mb={6}>
-              TEXT KHUYẾN KHÍCH MỌI NGƯỜI QUYÊN GÓP, NÚT BẤM BÊN DƯỚI SẼ ROUTE TỚI TRANG THANH TOÁN
+              Click vào nút bên dưới để bắt đầu trở thành 1 phần của dự án thiện nguyện phi tập
+              trung của chúng tôi
             </MKTypography>
             <MKButton
               variant="gradient"
@@ -73,26 +78,22 @@ function Download() {
         <Grid container item xs={6} mx="auto">
           <MKBox textAlign="center">
             <MKTypography variant="h3" mt={6} mb={3}>
-              Hỗ trợ các loại ví, bên dưới là logo các loại ví gì đấy
+              Hỗ trợ các loại ví
             </MKTypography>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={4} lg={2}>
-                <Tooltip title="Bootstrap 5 - Most popular front-end component library">
+                <Tooltip title="Lace Wallet">
                   <MKBox
                     component="a"
                     href="https://www.creative-tim.com/product/material-kit"
                     target="_blank"
                   >
-                    <MKBox
-                      component="img"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap5.jpg"
-                      width="100%"
-                    />
+                    <MKBox component="img" src={laceImage} width="90%" />
                   </MKBox>
                 </Tooltip>
               </Grid>
               <Grid item xs={4} lg={2}>
-                <Tooltip title="Comming soon">
+                <Tooltip title="Nami Wallet">
                   <MKBox
                     opacity={0.5}
                     component="a"
@@ -100,16 +101,12 @@ function Download() {
                     target="_blank"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <MKBox
-                      component="img"
-                      src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/icon-tailwind.jpg"
-                      width="100%"
-                    />
+                    <MKBox component="img" src={NamiImage} width="90%" />
                   </MKBox>
                 </Tooltip>
               </Grid>
               <Grid item xs={4} lg={2}>
-                <Tooltip title="Comming soon">
+                <Tooltip title="Yoroi Wallet">
                   <MKBox
                     opacity={0.5}
                     component="a"
@@ -117,16 +114,12 @@ function Download() {
                     target="_blank"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <MKBox
-                      component="img"
-                      src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg"
-                      width="100%"
-                    />
+                    <MKBox component="img" src={YoroiImage} width="100%" />
                   </MKBox>
                 </Tooltip>
               </Grid>
               <Grid item xs={4} lg={2}>
-                <Tooltip title="Comming soon">
+                <Tooltip title="Eternl Wallet">
                   <MKBox
                     opacity={0.5}
                     component="a"
@@ -134,43 +127,7 @@ function Download() {
                     target="_blank"
                     onClick={(e) => e.preventDefault()}
                   >
-                    <MKBox
-                      component="img"
-                      src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg"
-                      width="100%"
-                    />
-                  </MKBox>
-                </Tooltip>
-              </Grid>
-              <Grid item xs={4} lg={2}>
-                <Tooltip title="Comming soon">
-                  <MKBox
-                    component="a"
-                    href="https://www.creative-tim.com/product/material-kit-react"
-                    target="_blank"
-                  >
-                    <MKBox
-                      component="img"
-                      src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg"
-                      width="100%"
-                    />
-                  </MKBox>
-                </Tooltip>
-              </Grid>
-              <Grid item xs={4} lg={2}>
-                <Tooltip title="Comming soon">
-                  <MKBox
-                    opacity={0.5}
-                    component="a"
-                    href="#"
-                    target="_blank"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    <MKBox
-                      component="img"
-                      src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg"
-                      width="100%"
-                    />
+                    <MKBox component="img" src={EternlImage} width="100%" />
                   </MKBox>
                 </Tooltip>
               </Grid>

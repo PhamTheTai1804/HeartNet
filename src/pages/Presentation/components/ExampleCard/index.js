@@ -97,7 +97,7 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
           )}
           {count > 0 && (
             <MKTypography variant="button" fontWeight="regular" color="secondary">
-              {count} {count === 1 ? "Example" : "Đơn vị đếm"}
+              {count} {count === 1 ? "Example" : "Nhà cung cấp"}
             </MKTypography>
           )}
         </MKBox>

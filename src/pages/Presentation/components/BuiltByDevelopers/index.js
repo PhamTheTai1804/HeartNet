@@ -46,15 +46,17 @@ function BuiltByDevelopers() {
       <Container>
         <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
           <MKTypography variant="h4" color="white" fontWeight="bold">
-            Built by developers
+            Xây dựng và duy trì bởi
           </MKTypography>
           <MKTypography variant="h1" color="white" mb={1}>
-            Complex Documentation
+            Tổ chức hoàn toàn phi lợi nhuận
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-            From colors, cards, typography to complex elements, you will find the full
-            documentation. Play with the utility classes and you will create unlimited combinations
-            for our components.
+            HeartNet là tổ chức từ thiện phi lợi nhuận, cam kết kết nối những tấm lòng nhân ái với
+            những hoàn cảnh khó khăn nhất. Với sứ mệnh lan tỏa yêu thương, chúng tôi mang đến cơ hội
+            thay đổi cuộc sống qua các dự án giáo dục, y tế và hỗ trợ cộng đồng. Tham gia cùng
+            HeartNet, bạn sẽ cùng chúng tôi xây dựng một mạng lưới sẻ chia rộng lớn, nơi mỗi đóng
+            góp nhỏ đều tạo nên những thay đổi lớn lao.
           </MKTypography>
           <MKTypography
             component="a"
@@ -79,7 +81,7 @@ function BuiltByDevelopers() {
               },
             }}
           >
-            Read docs <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            Tìm hiểu thêm <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
           </MKTypography>
         </Grid>
       </Container>

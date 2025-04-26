@@ -40,7 +40,6 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 
 // @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
@@ -70,7 +69,7 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "Projects",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
@@ -108,7 +107,7 @@ const routes = [
     ],
   },
   {
-    name: "sections",
+    name: "Community",
     icon: <Icon>view_day</Icon>,
     collapse: [
       {
@@ -129,7 +128,7 @@ const routes = [
         ],
       },
       {
-        name: "navigation",
+        name: "About Us",
         description: "See all navigations",
         dropdown: true,
         collapse: [
@@ -239,7 +238,7 @@ const routes = [
     ],
   },
   {
-    name: "docs",
+    name: "About Us",
     icon: <Icon>article</Icon>,
     collapse: [
       {
@@ -263,11 +262,6 @@ const routes = [
         href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
       },
     ],
-  },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
 

@@ -12,56 +12,49 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
-
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
+import CaoBanglImage from "assets/images/Cao Bằng.jpg";
+import DenTruonglImage from "assets/images/DenTruong.png";
+import NguoiGialImage from "assets/images/NguoiGia.jpg";
+import XayCaulImage from "assets/images/XayCau.png";
+import HoTrolImage from "assets/images/HoTro.jpg";
+import BuaAnlImage from "assets/images/BuaAn.jpg";
 
 export default [
   {
     title: "Một số dự án đang được thực hiện",
-    description: "Các dự án đang thực hiện sẽ được hiển thị ở đây",
+    description: "Mỗi dự án đều được lên kế hoạch với các mức kêu gọi khác nhau !",
     items: [
       {
-        image: `${imagesPrefix}/headers.jpg`,
-        name: "Dự án 1",
+        image: CaoBanglImage,
+        name: "Chương trình xây trường tại Cao Bằng",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `${imagesPrefix}/features.jpg`,
-        name: "Dự án 2",
+        image: DenTruonglImage,
+        name: "Chương trình cùng em tới trường",
         count: 14,
         route: "/sections/page-sections/features",
       },
       {
-        image: `${imagesPrefix}/pricing.jpg`,
-        name: "Dự án 3",
+        image: XayCaulImage,
+        name: "Chương trình xây cầu tại An Giang",
         count: 8,
-        pro: true,
       },
       {
-        image: `${imagesPrefix}/faq.jpg`,
-        name: "Dự án 4",
-        count: 1,
-        pro: true,
+        image: BuaAnlImage,
+        name: "Chương trình cải thiện bữa ăn cho các em học sinh miền núi tỉnh Lào Cai",
+        count: 6,
       },
       {
-        image: `${imagesPrefix}/blogs.jpg`,
-        name: "Dự án 5",
+        image: HoTrolImage,
+        name: "Chương trình hỗ trợ bệnh nhân hiểm nghèo TP.HCM",
         count: 11,
-        pro: true,
       },
       {
-        image: `${imagesPrefix}/testimonials.jpg`,
-        name: "Dự án 6",
+        image: NguoiGialImage,
+        name: "Chương trình hỗ trợ người già neo đơn tại Hà Nội",
         count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/content-sections.jpg`,
-        name: "Dự án 7",
-        count: 8,
-        pro: true,
       },
     ],
   },

@@ -28,8 +28,8 @@ function PageHeaders() {
     <BaseLayout
       title="Dự Án Xây Trường Vùng Cao"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/page-sections/page-headers" },
-        { label: "Page Headers" },
+        { label: "Trang Chủ", route: "/sections/page-sections/page-headers" },
+        { label: "Dự Án" },
       ]}
     >
       <View title="Từ Ngày 26/3 đến 26/10" code={headerOneCode} height="40rem">

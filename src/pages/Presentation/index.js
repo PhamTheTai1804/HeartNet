@@ -54,7 +54,7 @@ function Presentation() {
         action={{
           type: "external",
           route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          label: "Donate Now",
           color: "info",
         }}
         sticky
@@ -123,12 +123,12 @@ function Presentation() {
                 variant="gradient"
                 color="info"
                 icon="flag"
-                title="Getting Started"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                title="Sứ mệnh"
+                description="Đưa những dự án thiện nguyện tới với cộng đồng. Đồng thời đảm bảo sự hỗ trợ của cộng đồng tới đúng người, đúng việc một cách minh bạch, thuận tiện nhất"
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
+                  label: "Tìm hiểu thêm",
                 }}
               />
             </Grid>
@@ -136,12 +136,12 @@ function Presentation() {
               <FilledInfoCard
                 color="info"
                 icon="precision_manufacturing"
-                title="Plugins"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
+                title="Công nghệ đột phá"
+                description="Hoạt động trên nền tảng Cardano, nền tảng blockchain mạnh mẽ. Cùng với nhiều công nghệ khác đi đầu trong mô hình thiện nguyện điện tử."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
-                  label: "Read more",
+                  label: "Tìm hiểu thêm",
                 }}
               />
             </Grid>
@@ -149,12 +149,12 @@ function Presentation() {
               <FilledInfoCard
                 color="info"
                 icon="apps"
-                title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                title="Phát triển trong tương lai"
+                description="Chương trình đang phát triển theo hướng tiến đến gần với cộng đồng hơn. Ngoài ra, công nghệ BlockChain vẫn còn rất nhiều tiềm năng ứng dụng."
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-                  label: "Read more",
+                  label: "Tìm hiểu thêm",
                 }}
               />
             </Grid>

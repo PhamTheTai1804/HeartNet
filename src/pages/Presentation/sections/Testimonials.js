@@ -44,38 +44,38 @@ function Information() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2">Trusted by over</MKTypography>
+          <MKTypography variant="h2">Cộng đồng với</MKTypography>
           <MKTypography variant="h2" color="info" textGradient mb={2}>
-            1,679,477+ web developers
+            1,679,477+ người đã tham gia đóng góp
           </MKTypography>
           <MKTypography variant="body1" color="text" mb={2}>
-            Many Fortune 500 companies, startups, universities and governmental institutions love
-            Creative Tim&apos;s products.
+            Hàng triệu người đã tham gia chia sẻ giúp đỡ các đối tượng yếu thế trong xã hội.Hướng
+            tới xây dựng một cộng đồng vị tha, phát triển và bền vững.
           </MKTypography>
         </Grid>
         <Grid container spacing={3} sx={{ mt: 8 }}>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Nick Willever"
+              name="Nguyễn Thị Tâm"
               date="1 day ago"
-              review="This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
+              review="Ứng dụng thiện nguyện này thực sự rất hữu ích, giúp kết nối cộng đồng, tạo ra những thay đổi tích cực. Mình rất vui khi được đóng góp và hỗ trợ những người cần giúp đỡ."
               rating={5}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
               color="info"
-              name="Shailesh Kushwaha"
+              name="Trần Quyết Tiến"
               date="1 week ago"
-              review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+              review="Mình rất ấn tượng với cách ứng dụng này vận hành. Giao diện đơn giản, dễ sử dụng, và đặc biệt là mục tiêu giúp đỡ cộng đồng thật đáng trân trọng. Đây là một công cụ tuyệt vời."
               rating={5}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Samuel Kamuli"
+              name="Phạm Chiến Thắng"
               date="3 weeks ago"
-              review="Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."
+              review="Ứng dụng này không chỉ giúp kết nối những tấm lòng nhân ái mà còn giúp mọi người có thể đóng góp một cách dễ dàng và nhanh chóng. Đây là một sáng kiến tuyệt vời để hỗ trợ xã hội."
               rating={5}
             />
           </Grid>

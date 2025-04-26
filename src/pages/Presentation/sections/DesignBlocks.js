@@ -73,15 +73,15 @@ function DesignBlocks() {
           <MKBadge
             variant="contained"
             color="info"
-            badgeContent="nhãn gì đó"
+            badgeContent="Chú ý !!!"
             container
             sx={{ mb: 2 }}
           />
           <MKTypography variant="h2" fontWeight="bold">
-            Tiêu đề
+            Các dự án
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            Mô tả
+            Khám phá các dự án thiện nguyện đang được thực hiện
           </MKTypography>
         </Grid>
       </Container>

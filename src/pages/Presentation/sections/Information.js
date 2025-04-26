@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Các tính năng
+                    Nền tảng quyên
                     <br />
-                    Của ứng dụng
+                    góp từ thiện
                   </>
                 }
-                description="Mô tả các tính năng."
+                description="Hoạt động trên nền tảng Cardano."
               />
               <RotatingCardBack
                 image={bgBack}
                 title="Khám phá nhiều hơn"
-                description="Routes tới page thông tin."
+                description="Để biết nhiều hơn về nền tảng Cardano cũng như chi tiết ứng dụng."
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "Truy cập trang thông tin",
                 }}
               />
             </RotatingCard>
@@ -66,15 +66,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Tính Năng 1"
-                  description="Mô tả tính năng 1."
+                  title="Thao tác thuận tiện"
+                  description="UX/UI thân thiện với mọi người."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
-                  title="Tính Năng 2"
-                  description="Mô tả tính năng 2."
+                  title="Tự động hóa quy trình"
+                  description="Sử dụng công nghệ nâng cao hiệu suất, tăng tính tự động hóa trong quá trình từ thiện."
                 />
               </Grid>
             </Grid>
@@ -82,15 +82,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
-                  title="Tính năng 3"
-                  description="Mô tả tính năng 3."
+                  title="Minh bạch trong giải ngân"
+                  description="Sử dụng công nghệ BlockChain và nền tảng Cardano để hoàn toàn công khai, minh bạch trong quá trình giải ngân quỹ."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="devices"
-                  title="Tính năng 4"
-                  description="Mô tả tính năng 4."
+                  title="Xây dựng cộng đồng"
+                  description="Kêu gọi, xây dựng cộng đồng lành mạnh và phát triển. Đưa mọi người tiếp cận gần hơn với đồng ADA và Cardano"
                 />
               </Grid>
             </Grid>

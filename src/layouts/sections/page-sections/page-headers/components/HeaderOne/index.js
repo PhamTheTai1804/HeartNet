@@ -19,20 +19,36 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
+<<<<<<< HEAD
+=======
+import { Modal, Button } from "@mui/material";
+>>>>>>> 15f955cc688873459b76f0a797af16222dce8373
 import { useState } from "react";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
+<<<<<<< HEAD
 import CloseIcon from "@mui/icons-material/Close";
 import Divider from "@mui/material/Divider";
 import Slide from "@mui/material/Slide";
+=======
+import SupplierRegistrationForm from "layouts/sections/input-areas/forms/components/SupplierRegistrationForm";
+
+>>>>>>> 15f955cc688873459b76f0a797af16222dce8373
 // Images
 import CaoBangImage from "assets/images/Cao Bằng.jpg";
 
 function HeaderOne() {
+<<<<<<< HEAD
   const [show, setShow] = useState(false);
   const toggleModal = () => setShow(!show);
+=======
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+>>>>>>> 15f955cc688873459b76f0a797af16222dce8373
   return (
     <MKBox component="header" position="relative" height="100%">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
@@ -181,9 +197,39 @@ function HeaderOne() {
               hội đổi đời cho các trẻ em vùng cao
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
+<<<<<<< HEAD
               <MKButton color="white">Get Started</MKButton>
               <MKButton variant="text" color="white" onClick={toggleModal}>
                 Read more
+=======
+              <MKButton color="white" onClick={handleOpen}>
+                Tham gia với vai trò nhà cung cấp
+              </MKButton>
+              <Modal open={open} onClose={handleClose}>
+                <MKBox
+                  sx={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    width: 800,
+                    height: 600,
+                    bgcolor: "background.paper",
+                    boxShadow: 24,
+                    p: 4,
+                    borderRadius: 2,
+                    outline: "none",
+                  }}
+                >
+                  <SupplierRegistrationForm />
+                  <Button variant="contained" onClick={handleClose} sx={{ mt: 2 }}>
+                    Close
+                  </Button>
+                </MKBox>
+              </Modal>
+              <MKButton variant="text" color="white">
+                Thông tin chi tiết
+>>>>>>> 15f955cc688873459b76f0a797af16222dce8373
               </MKButton>
               <Modal
                 open={show}

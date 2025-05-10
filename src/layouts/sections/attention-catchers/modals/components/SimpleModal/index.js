@@ -68,6 +68,15 @@ function SimpleModal() {
                   what colors are good, before somebody tells you you shouldn&apos;t like pink
                   because that&apos;s for girls, or you&apos;d instantly become a gay two-year-old.
                 </MKTypography>
+                <MKTypography variant="body2" color="secondary" fontWeight="regular">
+                  Society has put up so many boundaries, so many limitations on what&apos;s right
+                  and wrong that it&apos;s almost impossible to get a pure thought out.
+                  <br />
+                  <br />
+                  It&apos;s like a little kid, a little boy, looking at colors, and no one told him
+                  what colors are good, before somebody tells you you shouldn&apos;t like pink
+                  because that&apos;s for girls, or you&apos;d instantly become a gay two-year-old.
+                </MKTypography>
               </MKBox>
               <Divider sx={{ my: 0 }} />
               <MKBox display="flex" justifyContent="space-between" p={1.5}>

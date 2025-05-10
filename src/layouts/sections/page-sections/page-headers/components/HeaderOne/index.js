@@ -14,20 +14,25 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import Modal from "@mui/material/Modal";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
-
+import { useState } from "react";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
-
+import CloseIcon from "@mui/icons-material/Close";
+import Divider from "@mui/material/Divider";
+import Slide from "@mui/material/Slide";
 // Images
 import CaoBangImage from "assets/images/Cao Bằng.jpg";
 
 function HeaderOne() {
+  const [show, setShow] = useState(false);
+  const toggleModal = () => setShow(!show);
   return (
     <MKBox component="header" position="relative" height="100%">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
@@ -177,9 +182,67 @@ function HeaderOne() {
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
               <MKButton color="white">Get Started</MKButton>
-              <MKButton variant="text" color="white">
+              <MKButton variant="text" color="white" onClick={toggleModal}>
                 Read more
               </MKButton>
+              <Modal
+                open={show}
+                onClose={toggleModal}
+                sx={{ display: "grid", placeItems: "center" }}
+              >
+                <Slide direction="down" in={show} timeout={500}>
+                  <MKBox
+                    position="relative"
+                    width="500px"
+                    display="flex"
+                    flexDirection="column"
+                    borderRadius="xl"
+                    bgColor="white"
+                    shadow="xl"
+                  >
+                    <MKBox display="flex" alignItems="center" justifyContent="space-between" p={2}>
+                      <MKTypography variant="h5">Your modal title</MKTypography>
+                      <CloseIcon
+                        fontSize="medium"
+                        sx={{ cursor: "pointer" }}
+                        onClick={toggleModal}
+                      />
+                    </MKBox>
+                    <Divider sx={{ my: 0 }} />
+                    <MKBox p={2}>
+                      <MKTypography variant="body1" color="secondary" fontWeight="regular">
+                        Society has put up so many boundaries, so many limitations on what&apos;s
+                        right and wrong that it&apos;s almost impossible to get a pure thought out.
+                        <br />
+                        <br />
+                        It&apos;s like a little kid, a little boy, looking at colors, and no one
+                        told him what colors are good, before somebody tells you you shouldn&apos;t
+                        like pink because that&apos;s for girls, or you&apos;d instantly become a
+                        gay two-year-old.
+                      </MKTypography>
+                      <MKTypography variant="body2" color="secondary" fontWeight="regular">
+                        Society has put up so many boundaries, so many limitations on what&apos;s
+                        right and wrong that it&apos;s almost impossible to get a pure thought out.
+                        <br />
+                        <br />
+                        It&apos;s like a little kid, a little boy, looking at colors, and no one
+                        told him what colors are good, before somebody tells you you shouldn&apos;t
+                        like pink because that&apos;s for girls, or you&apos;d instantly become a
+                        gay two-year-old.
+                      </MKTypography>
+                    </MKBox>
+                    <Divider sx={{ my: 0 }} />
+                    <MKBox display="flex" justifyContent="space-between" p={1.5}>
+                      <MKButton variant="gradient" color="dark" onClick={toggleModal}>
+                        close
+                      </MKButton>
+                      <MKButton variant="gradient" color="info">
+                        save changes
+                      </MKButton>
+                    </MKBox>
+                  </MKBox>
+                </Slide>
+              </Modal>
             </Stack>
           </Grid>
         </Container>

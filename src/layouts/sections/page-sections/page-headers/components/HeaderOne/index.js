@@ -18,16 +18,22 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
-
+import { Modal, Button } from "@mui/material";
+import { useState } from "react";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
+import SupplierRegistrationForm from "layouts/sections/input-areas/forms/components/SupplierRegistrationForm";
 
 // Images
 import CaoBangImage from "assets/images/Cao Bằng.jpg";
 
 function HeaderOne() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <MKBox component="header" position="relative" height="100%">
       <MKBox component="nav" position="absolute" top="0.5rem" width="100%">
@@ -176,9 +182,33 @@ function HeaderOne() {
               hội đổi đời cho các trẻ em vùng cao
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
+              <MKButton color="white" onClick={handleOpen}>
+                Tham gia với vai trò nhà cung cấp
+              </MKButton>
+              <Modal open={open} onClose={handleClose}>
+                <MKBox
+                  sx={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    width: 800,
+                    height: 600,
+                    bgcolor: "background.paper",
+                    boxShadow: 24,
+                    p: 4,
+                    borderRadius: 2,
+                    outline: "none",
+                  }}
+                >
+                  <SupplierRegistrationForm />
+                  <Button variant="contained" onClick={handleClose} sx={{ mt: 2 }}>
+                    Close
+                  </Button>
+                </MKBox>
+              </Modal>
               <MKButton variant="text" color="white">
-                Read more
+                Thông tin chi tiết
               </MKButton>
             </Stack>
           </Grid>

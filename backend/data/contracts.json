@@ -1,0 +1,72 @@
+[
+  {
+    "contract_id": 1,
+    "project_id": 1,
+    "contractor_id": 1,
+    "IPFS Link": null,
+    "NumberOfVotes": 1200
+  },
+    {
+    "contract_id": 2,
+    "project_id": 1,
+    "contractor_id": 2,
+    "IPFS Link": null,
+    "NumberOfVotes": 890
+  },
+    {
+    "contract_id": 3,
+    "project_id": 1,
+    "contractor_id": 3,
+    "IPFS Link": null,
+    "NumberOfVotes": 623
+  },
+    {
+    "contract_id": 4,
+    "project_id": 1,
+    "contractor_id": 4,
+    "IPFS Link": null,
+    "NumberOfVotes": 3123
+  },
+    {
+    "contract_id": 5,
+    "project_id": 1,
+    "contractor_id": 5,
+    "IPFS Link": null,
+    "NumberOfVotes": 8127
+  },
+    {
+    "contract_id": 6,
+    "project_id": 1,
+    "contractor_id": 6,
+    "IPFS Link": null,
+    "NumberOfVotes": 482
+  },
+    {
+    "contract_id": 7,
+    "project_id": 1,
+    "contractor_id": 7,
+    "IPFS Link": null,
+    "NumberOfVotes": 645
+  },
+    {
+    "contract_id": 8,
+    "project_id": 1,
+    "contractor_id": 8,
+    "IPFS Link": null,
+    "NumberOfVotes": 2134
+  },
+    {
+    "contract_id": 9,
+    "project_id": 1,
+    "contractor_id": 9,
+    "IPFS Link": null,
+    "NumberOfVotes": 1618
+  },
+    {
+    "contract_id": 10,
+    "project_id": 1,
+    "contractor_id": 10,
+    "IPFS Link": null,
+    "NumberOfVotes": 4123
+  }
+]
